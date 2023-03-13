@@ -13,6 +13,9 @@
 		DF5614BD29BF011500406440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5614BB29BF011500406440 /* Main.storyboard */; };
 		DF5614BF29BF011600406440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5614BE29BF011600406440 /* Assets.xcassets */; };
 		DF5614C229BF011600406440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5614C029BF011600406440 /* LaunchScreen.storyboard */; };
+		DF5614E529BF11C200406440 /* CRUDable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614E429BF11C200406440 /* CRUDable.swift */; };
+		DF5614E729BF11DA00406440 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614E629BF11DA00406440 /* CoreDataStack.swift */; };
+		DF5614EA29BF130100406440 /* CoreDataPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614E929BF130100406440 /* CoreDataPersistentContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DF5614BE29BF011600406440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5614C129BF011600406440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF5614C329BF011600406440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF5614E429BF11C200406440 /* CRUDable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDable.swift; sourceTree = "<group>"; };
+		DF5614E629BF11DA00406440 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DF5614E929BF130100406440 /* CoreDataPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistentContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,7 @@
 			children = (
 				DF5614CC29BF081D00406440 /* Application */,
 				DF5614CE29BF083900406440 /* Presentation */,
-				DF5614CF29BF084300406440 /* Data */,
+				DF5614E329BF11BA00406440 /* Data */,
 				DF5614CD29BF082700406440 /* Resources */,
 			);
 			path = "01-diary";
@@ -92,11 +98,22 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		DF5614CF29BF084300406440 /* Data */ = {
+		DF5614E329BF11BA00406440 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				DF5614E429BF11C200406440 /* CRUDable.swift */,
+				DF5614E829BF11FF00406440 /* CoreDataStack */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		DF5614E829BF11FF00406440 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				DF5614E629BF11DA00406440 /* CoreDataStack.swift */,
+				DF5614E929BF130100406440 /* CoreDataPersistentContainer.swift */,
+			);
+			path = CoreDataStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5614E729BF11DA00406440 /* CoreDataStack.swift in Sources */,
 				DF5614BA29BF011500406440 /* ViewController.swift in Sources */,
+				DF5614EA29BF130100406440 /* CoreDataPersistentContainer.swift in Sources */,
 				DF5614B629BF011500406440 /* AppDelegate.swift in Sources */,
 				DF5614B829BF011500406440 /* SceneDelegate.swift in Sources */,
+				DF5614E529BF11C200406440 /* CRUDable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
