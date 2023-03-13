@@ -1,6 +1,6 @@
 //
 //  CRUDable.swift
-//  01-diary
+//  Diary-CleanArchitecture
 //
 //  Copyright (c) 2023 Jeremy All rights reserved.
     
@@ -8,8 +8,8 @@
 import Foundation
 
 protocol CRUDable {
-    func create() throws
-    func read() throws -> [Diary]
+    func create(using data: DiaryData) throws
+    func read() throws -> [DiaryData]
     func update() throws
-    func delete(object: Diary)
+    func delete(object: Diary) 
 }

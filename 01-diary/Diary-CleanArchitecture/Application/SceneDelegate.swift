@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  01-diary
+//  Diary-CleanArchitecture
 //
 //  Copyright (c) 2023 Jeremy All rights reserved.
     

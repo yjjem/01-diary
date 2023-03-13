@@ -17,8 +17,8 @@ extension Diary {
     @NSManaged public var image: Data?
     @NSManaged public var iconImage: Data?
     @NSManaged public var text: String?
-    @NSManaged public var tite: String?
-
+    @NSManaged public var title: String?
+    @NSManaged public var uuid: UUID?
 }
 
 extension Diary : Identifiable {

@@ -1,6 +1,6 @@
 //
 //  CoreDataStack.swift
-//  01-diary
+//  Diary-CleanArchitecture
 //
 //  Copyright (c) 2023 Jeremy All rights reserved.
 
@@ -10,27 +10,41 @@ import CoreData
 enum CoreDataError: Error {
     case fetchFailed
     case updateFailed
+    case objectNotFound
 }
 
 final class CoreDataStack: CRUDable {
-    typealias ReqeustableModel =  NSManagedObject
-    private let manager: CoreDataPersistentManager
-    private let context: NSManagedObjectContext
+    let context: NSManagedObjectContext
+    let manager: CoreDataPersistentManager
     
-    init(manager: CoreDataPersistentManager) {
+    init(manager: CoreDataPersistentManager, inMemory: Bool = false) {
         self.manager = manager
         self.context = manager.container.viewContext
     }
     
-    func create() throws {
+    func create(using data: DiaryData) throws {
         let newDiary = Diary(context: context)
+        newDiary.title = data.title
+        newDiary.text = data.text
+        newDiary.image = data.imageData
+        newDiary.iconImage = data.iconImageData
         newDiary.createdAt = Date()
         try update()
     }
     
-    func read() throws -> [Diary] {
+    func read() throws -> [DiaryData] {
         do {
             let requestedData = try context.fetch(Diary.fetchRequest())
+                .map {
+                    return DiaryData(
+                        title: $0.title,
+                        text: $0.text,
+                        imageData: $0.iconImage,
+                        iconImageData: $0.iconImage,
+                        createdAt: $0.createdAt,
+                        uuid: $0.uuid
+                    )
+                }
             return requestedData
         } catch {
             throw CoreDataError.fetchFailed
