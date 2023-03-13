@@ -8,8 +8,8 @@
 import Foundation
 
 protocol CRUDable {
-    func create()
-    func read()
-    func update()
-    func delete()
+    func create() throws
+    func read() throws -> [Diary]
+    func update() throws
+    func delete(object: Diary)
 }
