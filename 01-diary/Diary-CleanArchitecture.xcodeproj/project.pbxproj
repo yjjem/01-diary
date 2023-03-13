@@ -22,7 +22,8 @@
 		DF56150929BF20A400406440 /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56150829BF20A400406440 /* TestCoreDataStack.swift */; };
 		DF56151529BF295B00406440 /* Diary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614FA29BF17BE00406440 /* Diary+CoreDataClass.swift */; };
 		DF56151629BF295E00406440 /* Diary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614FB29BF17BE00406440 /* Diary+CoreDataProperties.swift */; };
-		DF56151B29BF32F700406440 /* DiaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56151A29BF32F700406440 /* DiaryData.swift */; };
+		DF56152029BF51C900406440 /* DiaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56151F29BF51C900406440 /* DiaryData.swift */; };
+		DF56152229BF525100406440 /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56152129BF525100406440 /* CoreDataError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,8 @@
 		DF5614FB29BF17BE00406440 /* Diary+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DF56150629BF20A400406440 /* TestCoreDataStack.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCoreDataStack.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF56150829BF20A400406440 /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
-		DF56151A29BF32F700406440 /* DiaryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryData.swift; sourceTree = "<group>"; };
+		DF56151F29BF51C900406440 /* DiaryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryData.swift; sourceTree = "<group>"; };
+		DF56152129BF525100406440 /* CoreDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				DF5614E629BF11DA00406440 /* CoreDataStack.swift */,
 				DF5614E929BF130100406440 /* CoreDataPersistentManager.swift */,
+				DF56152129BF525100406440 /* CoreDataError.swift */,
 				DF5614FE29BF17D600406440 /* Models */,
 			);
 			path = CoreDataStack;
@@ -171,15 +174,15 @@
 		DF56151829BF32E400406440 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				DF56151929BF32ED00406440 /* Entities */,
+				DF56151E29BF51C100406440 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		DF56151929BF32ED00406440 /* Entities */ = {
+		DF56151E29BF51C100406440 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				DF56151A29BF32F700406440 /* DiaryData.swift */,
+				DF56151F29BF51C900406440 /* DiaryData.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -292,7 +295,8 @@
 				DF5614B629BF011500406440 /* AppDelegate.swift in Sources */,
 				DF5614B829BF011500406440 /* SceneDelegate.swift in Sources */,
 				DF5614FD29BF17BE00406440 /* Diary+CoreDataProperties.swift in Sources */,
-				DF56151B29BF32F700406440 /* DiaryData.swift in Sources */,
+				DF56152029BF51C900406440 /* DiaryData.swift in Sources */,
+				DF56152229BF525100406440 /* CoreDataError.swift in Sources */,
 				DF5614E529BF11C200406440 /* CRUDable.swift in Sources */,
 				DF5614F929BF176900406440 /* Diary.xcdatamodeld in Sources */,
 			);

@@ -7,12 +7,6 @@
 
 import CoreData
 
-enum CoreDataError: Error {
-    case fetchFailed
-    case updateFailed
-    case objectNotFound
-}
-
 final class CoreDataStack: CRUDable {
     let context: NSManagedObjectContext
     let manager: CoreDataPersistentManager
@@ -28,23 +22,13 @@ final class CoreDataStack: CRUDable {
         newDiary.text = data.text
         newDiary.image = data.imageData
         newDiary.iconImage = data.iconImageData
-        newDiary.createdAt = Date()
+        newDiary.createdAt = data.createdAt
         try update()
     }
     
-    func read() throws -> [DiaryData] {
+    func read() throws -> [Diary] {
         do {
             let requestedData = try context.fetch(Diary.fetchRequest())
-                .map {
-                    return DiaryData(
-                        title: $0.title,
-                        text: $0.text,
-                        imageData: $0.iconImage,
-                        iconImageData: $0.iconImage,
-                        createdAt: $0.createdAt,
-                        uuid: $0.uuid
-                    )
-                }
             return requestedData
         } catch {
             throw CoreDataError.fetchFailed
