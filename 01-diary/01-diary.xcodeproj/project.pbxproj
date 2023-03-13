@@ -16,6 +16,9 @@
 		DF5614E529BF11C200406440 /* CRUDable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614E429BF11C200406440 /* CRUDable.swift */; };
 		DF5614E729BF11DA00406440 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614E629BF11DA00406440 /* CoreDataStack.swift */; };
 		DF5614EA29BF130100406440 /* CoreDataPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614E929BF130100406440 /* CoreDataPersistentContainer.swift */; };
+		DF5614F929BF176900406440 /* Diary v1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF5614F729BF176900406440 /* Diary v1.xcdatamodeld */; };
+		DF5614FC29BF17BE00406440 /* Diary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614FA29BF17BE00406440 /* Diary+CoreDataClass.swift */; };
+		DF5614FD29BF17BE00406440 /* Diary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614FB29BF17BE00406440 /* Diary+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		DF5614E429BF11C200406440 /* CRUDable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDable.swift; sourceTree = "<group>"; };
 		DF5614E629BF11DA00406440 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		DF5614E929BF130100406440 /* CoreDataPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistentContainer.swift; sourceTree = "<group>"; };
+		DF5614F829BF176900406440 /* Diary v1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Diary v1.xcdatamodel"; sourceTree = "<group>"; };
+		DF5614FA29BF17BE00406440 /* Diary+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DF5614FB29BF17BE00406440 /* Diary+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +118,19 @@
 			children = (
 				DF5614E629BF11DA00406440 /* CoreDataStack.swift */,
 				DF5614E929BF130100406440 /* CoreDataPersistentContainer.swift */,
+				DF5614FE29BF17D600406440 /* Models */,
 			);
 			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		DF5614FE29BF17D600406440 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF5614F729BF176900406440 /* Diary v1.xcdatamodeld */,
+				DF5614FA29BF17BE00406440 /* Diary+CoreDataClass.swift */,
+				DF5614FB29BF17BE00406440 /* Diary+CoreDataProperties.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5614E729BF11DA00406440 /* CoreDataStack.swift in Sources */,
+				DF5614FC29BF17BE00406440 /* Diary+CoreDataClass.swift in Sources */,
 				DF5614BA29BF011500406440 /* ViewController.swift in Sources */,
 				DF5614EA29BF130100406440 /* CoreDataPersistentContainer.swift in Sources */,
 				DF5614B629BF011500406440 /* AppDelegate.swift in Sources */,
 				DF5614B829BF011500406440 /* SceneDelegate.swift in Sources */,
+				DF5614FD29BF17BE00406440 /* Diary+CoreDataProperties.swift in Sources */,
 				DF5614E529BF11C200406440 /* CRUDable.swift in Sources */,
+				DF5614F929BF176900406440 /* Diary v1.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +438,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF5614F729BF176900406440 /* Diary v1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF5614F829BF176900406440 /* Diary v1.xcdatamodel */,
+			);
+			currentVersion = DF5614F829BF176900406440 /* Diary v1.xcdatamodel */;
+			path = "Diary v1.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DF5614AA29BF011500406440 /* Project object */;
 }
