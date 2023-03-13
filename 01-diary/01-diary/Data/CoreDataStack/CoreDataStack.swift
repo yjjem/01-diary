@@ -8,10 +8,10 @@
 import CoreData
 
 final class CoreDataStack: CRUDable {
-    let container: CoreDataPersistentContainer
+    let manager: CoreDataPersistentManager
     
-    init(container: CoreDataPersistentContainer) {
-        self.container = container
+    init(manager: CoreDataPersistentManager) {
+        self.manager = manager
     }
     
     func create() {

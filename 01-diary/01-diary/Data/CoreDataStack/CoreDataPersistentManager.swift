@@ -11,8 +11,8 @@ fileprivate enum Container {
     static let name = "Diary"
 }
 
-struct CoreDataPersistentContainer {
-    static let shared = CoreDataPersistentContainer()
+struct CoreDataPersistentManager {
+    static let shared = CoreDataPersistentManager()
     let container: NSPersistentContainer
     
     private init() {

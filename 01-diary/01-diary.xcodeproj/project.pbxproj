@@ -15,7 +15,7 @@
 		DF5614C229BF011600406440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5614C029BF011600406440 /* LaunchScreen.storyboard */; };
 		DF5614E529BF11C200406440 /* CRUDable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614E429BF11C200406440 /* CRUDable.swift */; };
 		DF5614E729BF11DA00406440 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614E629BF11DA00406440 /* CoreDataStack.swift */; };
-		DF5614EA29BF130100406440 /* CoreDataPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614E929BF130100406440 /* CoreDataPersistentContainer.swift */; };
+		DF5614EA29BF130100406440 /* CoreDataPersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614E929BF130100406440 /* CoreDataPersistentManager.swift */; };
 		DF5614F929BF176900406440 /* Diary v1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF5614F729BF176900406440 /* Diary v1.xcdatamodeld */; };
 		DF5614FC29BF17BE00406440 /* Diary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614FA29BF17BE00406440 /* Diary+CoreDataClass.swift */; };
 		DF5614FD29BF17BE00406440 /* Diary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5614FB29BF17BE00406440 /* Diary+CoreDataProperties.swift */; };
@@ -32,7 +32,7 @@
 		DF5614C329BF011600406440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF5614E429BF11C200406440 /* CRUDable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDable.swift; sourceTree = "<group>"; };
 		DF5614E629BF11DA00406440 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		DF5614E929BF130100406440 /* CoreDataPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistentContainer.swift; sourceTree = "<group>"; };
+		DF5614E929BF130100406440 /* CoreDataPersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistentManager.swift; sourceTree = "<group>"; };
 		DF5614F829BF176900406440 /* Diary v1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Diary v1.xcdatamodel"; sourceTree = "<group>"; };
 		DF5614FA29BF17BE00406440 /* Diary+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DF5614FB29BF17BE00406440 /* Diary+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DF5614E629BF11DA00406440 /* CoreDataStack.swift */,
-				DF5614E929BF130100406440 /* CoreDataPersistentContainer.swift */,
+				DF5614E929BF130100406440 /* CoreDataPersistentManager.swift */,
 				DF5614FE29BF17D600406440 /* Models */,
 			);
 			path = CoreDataStack;
@@ -207,7 +207,7 @@
 				DF5614E729BF11DA00406440 /* CoreDataStack.swift in Sources */,
 				DF5614FC29BF17BE00406440 /* Diary+CoreDataClass.swift in Sources */,
 				DF5614BA29BF011500406440 /* ViewController.swift in Sources */,
-				DF5614EA29BF130100406440 /* CoreDataPersistentContainer.swift in Sources */,
+				DF5614EA29BF130100406440 /* CoreDataPersistentManager.swift in Sources */,
 				DF5614B629BF011500406440 /* AppDelegate.swift in Sources */,
 				DF5614B829BF011500406440 /* SceneDelegate.swift in Sources */,
 				DF5614FD29BF17BE00406440 /* Diary+CoreDataProperties.swift in Sources */,
